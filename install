@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd KLUsuite_source
+./compile_klu
+
+cd ..
+rm *.so
+./cythonize

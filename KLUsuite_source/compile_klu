@@ -1,0 +1,37 @@
+#!/bin/bash
+
+rm ../lib/*
+rm ../include/*
+
+cd KLU
+make clean
+cd ..
+
+cd SuiteSparse_config/xerbla
+make all
+cd ../..
+
+cd KLU
+make all
+make install
+cd ..
+
+cd AMD
+make install
+cd ..
+
+cd BTF
+make install
+cd ..
+
+cd CHOLMOD
+make install
+cd ..
+
+cd COLAMD
+make install
+cd ..
+
+cd SuiteSparse_config
+make install
+cd ..

@@ -1,0 +1,12 @@
+*.so
+*.pyc
+.project
+.pydevproject
+*.png
+klu.c
+lib
+include
+*~
+build
+*.a
+*.o
