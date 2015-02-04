@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir lib
+mkdir include
+
 cd KLUsuite_source
 ./compile_klu
 
